@@ -10,7 +10,7 @@ console.log(id===anotherId)//false as symbol will make both the id's unique.
 
 /*Non-primitive data types are passed by reference, meaning they hold a reference to the memory location where the actual data is stored. As a result, changes made to the data through one reference will be reflected in all references to the same data." 
 
-Array,object,function*/
+Array,object,function are reference types*/
 
 const heros=["shaktiman", "naagraj", "doga"];//array
 
@@ -19,7 +19,9 @@ let myobj={
     age:22,
 }
 
-//treating function as a variable in js
+//one way to declare func is treating function as a variable in js
 const myfunction=function(){
     console.log("Hello world");
 }
+console.log(typeof myfunction)//output-function which is basically called object function.
+//datatype of non-primitive datatypes is object.
